@@ -1,0 +1,65 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik Pixels', cursive;
+background-image: url('./mky-moody-ZjZnkNb0x_0-unsplash.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: white;
+
+
+}
+
+.card{
+  background: #0200009a;
+  padding: 2em;
+  border-radius:30px ;
+  width: 100%;
+  max-width: 50vh;
+  max-width: 520px;
+  margin: 1rem;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.btn{
+  margin: 0.5em;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #7c7c7ce3;
+  color: white;
+  cursor: pointer;
+  transition: all 1s linear ease;
+}
+
+.btn:hover{
+  background-color: #7c7c7c26;
+ transform: scale(1.1);
+}
+
+
+input.search-bar{
+  width:250px;
+  border: none;
+  outline: 0;
+  padding: 0.5em;
+  border-radius: 18px;
+  background-color: #7c7c7c;
+  font-family: cursive;
+  color: white;
+  font-size: 1.5em;
+
+}
