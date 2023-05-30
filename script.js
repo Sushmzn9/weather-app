@@ -15,7 +15,7 @@ const fetchWeather = async () => {
 };
 
 fetchWeather();
-
+//function to display weather
 const displayWeather = (data) => {
   if (data && data.name) {
     const { name } = data;
@@ -24,8 +24,6 @@ const displayWeather = (data) => {
     const { icon } = data.weather[0];
 
     const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
-
-
 
     let str = `
       <h2 class="city">Weather in ${name}</h2>
@@ -38,12 +36,11 @@ const displayWeather = (data) => {
     `;
 
     wthDec.innerHTML = str;
-  }
-  else {
+  } else {
     wthDec.innerHTML = "<p>City not found.</p>";
   }
 };
-
+// function for search input
 const search = () => {
   const searchBar = document.querySelector(".search-bar");
   city = searchBar.value;
